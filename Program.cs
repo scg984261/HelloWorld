@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace HelloWorld
+﻿namespace HelloWorld
 {
     internal class Program
     {
@@ -8,6 +6,21 @@ namespace HelloWorld
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("Hello, from another line.");
+
+            Person person = new Person
+            {
+                FirstName = "Scott",
+                LastName = "Gillen"
+            };
+
+            Person anotherPerson = new Person
+            {
+                FirstName = "John",
+                LastName = "Jones"
+            };
+
+            Console.WriteLine(person.ToString());
+            Console.WriteLine(anotherPerson.ToString());
         }
     }
 }
